@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>api-gateway</artifactId>
+	<artifactId>apigateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-gateway</name>
+	<name>apigateway</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -31,41 +31,23 @@
 		<spring-cloud.version>2024.0.0-RC1</spring-cloud.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency> -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway-mvc</artifactId>
-		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-		<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-gateway</artifactId>
-</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-task</artifactId>
-		</dependency>
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <scope>runtime</scope>
-</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-gateway</artifactId>
+</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -85,11 +67,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-surefire-plugin</artifactId>
-  <version>3.0.0-M5</version>
-</plugin>
 		</plugins>
 	</build>
 	<repositories>

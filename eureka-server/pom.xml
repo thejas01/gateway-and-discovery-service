@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>eureka-server</artifactId>
+	<artifactId>eurekaserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eureka-server</name>
+	<name>eurekaserver</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -33,19 +33,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-task</artifactId>
 		</dependency>
 
 		<dependency>
@@ -71,14 +63,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
 			</plugin>
-			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version> <!-- Or try an earlier stable version -->
-    </plugin>
-
 		</plugins>
 	</build>
 	<repositories>
