@@ -30,12 +30,19 @@ public class ProductService {
         return productList.stream().filter(product -> product.getId() == id).findFirst();
     }
 
-    // Add a new product
+   // Add a new product
     public Product addProduct(Product product) {
         product.setId(generateProductId());
         productList.add(product);
         return product;
     }
+    // public boolean addProduct(Product product) {
+    //     if (Objects.equals(product.getId(), null) && productList.existsById(product.getId())) {
+    //         throw new IllegalArgumentException("Product with this ID already exists");
+    //     }
+    //     return productList.add(product);
+    // }
+    
 
     // Update an existing product
     public Optional<Product> updateProduct(int id, Product updatedProduct) {
